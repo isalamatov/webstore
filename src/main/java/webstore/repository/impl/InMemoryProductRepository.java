@@ -6,6 +6,7 @@ import webstore.repository.ProductRepository;
 
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Repository
 public class InMemoryProductRepository implements ProductRepository {
@@ -53,14 +54,14 @@ public class InMemoryProductRepository implements ProductRepository {
     }
 
     @Override
-    public List<Product> getProductByCategory(String category) {
-        List<Product> productsByCategory = new ArrayList<Product>();
+    public Set<Product> getProductByCategory(String category) {
+        List<Product> productsByCategory = new ArrayList<>();
         for (Product product : listOfProducts) {
             if (category.equalsIgnoreCase(product.getCategory())) {
                 productsByCategory.add(product);
             }
         }
-        return productsByCategory;
+        return new HashSet<>(productsByCategory);
     }
 
     @Override
@@ -84,5 +85,28 @@ public class InMemoryProductRepository implements ProductRepository {
         }
         productsByCategory.retainAll(productsByBrand);
         return productsByCategory;
+    }
+
+    @Override
+    public Set<Product> getProductsByFilterPrice(Map<String, List<String>> filterParams) {
+        Set<Product> result = new HashSet<>();
+        for (Product product : listOfProducts) {
+            System.out.println(product.getUnitPrice().doubleValue());
+            System.out.println(filterParams.get("low").get(0));
+            System.out.println(Double.parseDouble(filterParams.get("low").get(0)));
+            if ((product.getUnitPrice().doubleValue() >= Double.parseDouble(filterParams.get("low").get(0)))
+                && ((product.getUnitPrice().doubleValue() <= Double.parseDouble(filterParams.get("high").get(0))))) {
+                result.add(product);
+            }
+
+        }
+        return result;
+    }
+
+    @Override
+    public List<Product> getProductsByManufacturer(String manufacturer) {
+        return listOfProducts.stream()
+                .filter(x -> x.getManufacturer().equalsIgnoreCase(manufacturer))
+                .collect(Collectors.toList());
     }
 }

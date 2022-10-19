@@ -13,10 +13,10 @@
 <body>
 <section>
     <div class="media">
-        <img src="${pageContext.request.contextPath}/resources/Dasha_in_GUM.jpeg)" class="mr-3" alt="...">
+        <img src="/images/Dasha_in_GUM.jpeg" class="mr-3" alt="...">
         <div class="media-body">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">Как однажды Айро сказал Зуко:</h5>
+            Если долго сидеть на берегу реки мимо тебя проплывет труп твоего поверженного врага.
         </div>
     </div>
     <div class="jumbotron">
@@ -28,7 +28,7 @@
             <a class="ui-icon-clock"> <%= LocalDateTime.now().format(DateTimeFormatter.ofPattern("hh:mm dd-MM-yyyy")) %> </a>
         </p>
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="/webstore/products/all"
+            <a class="btn btn-primary btn-lg" href="/webstore/products/"
                role="button"> Products
             </a>
         </p>
@@ -38,8 +38,8 @@
             </a>
         </p>
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="/webstore/customer"
-               role="button"> Customers
+            <a class="btn btn-primary btn-lg" href="/webstore/products/add"
+               role="button"> Add new product
             </a>
         </p>
     </div>

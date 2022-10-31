@@ -1,0 +1,227 @@
+2022-10-3015:35:53 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 7 ms
+2022-10-3015:35:53 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/products
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:35:54
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:35:54
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 15 ms
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1234.png
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:35:54
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:35:54
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1235.png
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:35:54
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1236.png
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:35:54
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:35:54
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 1 ms
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:35:54
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3015:35:54 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:57 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/products/product?id=P1235
+2022-10-3015:35:57 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:35:57
+2022-10-3015:35:57 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:35:57
+2022-10-3015:35:58 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 15 ms
+2022-10-3015:35:58 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:58 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/js/controllers.js
+2022-10-3015:35:58 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:35:58
+2022-10-3015:35:58 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:35:58
+2022-10-3015:35:58 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 1 ms
+2022-10-3015:35:58 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/rest/cart/add/P1235
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:35:59
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:35:59
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 4 ms
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/rest/cart/undefined
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:35:59
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:35:59
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 3 ms
+2022-10-3015:35:59 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:35:59 WARN  PageNotFound:1110 - No mapping found for HTTP request with URI [/webstore/rest/cart/get/cartId] in DispatcherServlet with name 'DispatcherServlet'
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/cart
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:01
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:01
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 7 ms
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/cart/89CD28B04F0ED84364D358F2147F8083
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:01
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:01
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 9 ms
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/rest/cart/89CD28B04F0ED84364D358F2147F8083
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:01
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:01
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 3 ms
+2022-10-3015:36:01 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?cartId=89CD28B04F0ED84364D358F2147F8083
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:02
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:02
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 4 ms
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s1
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:02
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:02
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 8 ms
+2022-10-3015:36:02 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s1
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:06
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:06
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 12 ms
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s2
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:06
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:06
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 8 ms
+2022-10-3015:36:06 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s2
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:08
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:08
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 12 ms
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s3
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:08
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:08
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 8 ms
+2022-10-3015:36:08 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s3
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:12
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:12
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 13 ms
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s4
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:12
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:12
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 5 ms
+2022-10-3015:36:12 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s4
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:14
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:14
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 9 ms
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e4s5
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:14
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:14
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 9 ms
+2022-10-3015:36:14 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/products
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:16
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:16
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 13 ms
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1234.png
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:16
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:16
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1235.png
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:16
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1236.png
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:16
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:16
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:16
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3015:36:16 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/products/product?id=P1235
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:18
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:18
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 12 ms
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/js/controllers.js
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:18
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:18
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 1 ms
+2022-10-3015:36:18 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/rest/cart/add/P1235
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:19
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:19
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:19 WARN  PageNotFound:1110 - No mapping found for HTTP request with URI [/webstore/rest/cart/get/cartId] in DispatcherServlet with name 'DispatcherServlet'
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/rest/cart/undefined
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:19
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:19
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 9 ms
+2022-10-3015:36:19 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/cart
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:20
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:20
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 5 ms
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/cart/89CD28B04F0ED84364D358F2147F8083
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:20
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:20
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 8 ms
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/rest/cart/89CD28B04F0ED84364D358F2147F8083
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:20
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:20
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 3 ms
+2022-10-3015:36:20 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?cartId=89CD28B04F0ED84364D358F2147F8083
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:22
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:22
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 8 ms
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e5s1
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:22
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:22
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 11 ms
+2022-10-3015:36:22 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e5s1
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:24
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:24
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 10 ms
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e5s2
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:24
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:24
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 14 ms
+2022-10-3015:36:24 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e5s2
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:28
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:28
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 14 ms
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e5s3
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:28
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:28
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 5 ms
+2022-10-3015:36:28 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e5s3
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:31
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:31
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 4 ms
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/checkout?execution=e5s4
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:31
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:31
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 6 ms
+2022-10-3015:36:31 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/products
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:32
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:32
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 14 ms
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1234.png
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:32
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:32
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1236.png
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:32
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1235.png
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on30/10/2022 at 03:36:32
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:32
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 30/10/2022 at 03:36:32
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 1 ms
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3015:36:32 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3109:34:28 INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Sun Oct 30 15:34:37 MSK 2022]; parent: Root WebApplicationContext
+2022-10-3109:34:28 INFO  GenericWebApplicationContext:873 - Closing Flow ApplicationContext [checkout]: startup date [Sun Oct 30 15:34:50 MSK 2022]; parent: WebApplicationContext for namespace 'DispatcherServlet-servlet'
+2022-10-3109:34:28 INFO  XmlWebApplicationContext:873 - Closing Root WebApplicationContext: startup date [Sun Oct 30 15:34:36 MSK 2022]; root of context hierarchy

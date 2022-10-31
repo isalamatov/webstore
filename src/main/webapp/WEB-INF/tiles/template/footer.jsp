@@ -1,0 +1,1 @@
+<p>&copy; ©Igor Salamatov 2022</p>

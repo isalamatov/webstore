@@ -1,16 +1,14 @@
 package webstore.service.impl;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import webstore.model.Customer;
+import webstore.domain.Customer;
 import webstore.repository.CustomerRepository;
 import webstore.service.CustomerService;
 
 import java.util.List;
 
 @Service
-@Slf4j
 public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
@@ -18,5 +16,20 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public List<Customer> getAllCustomers() {
         return customerRepository.getAllCustomers();
+    }
+
+    @Override
+    public void saveCustomer(Customer customer) {
+        customerRepository.saveCustomer(customer);
+    }
+
+    @Override
+    public Customer getCustomer(String customerId) {
+        return customerRepository.getCustomer(customerId);
+    }
+
+    @Override
+    public Boolean isCustomerExist(String customerId) {
+        return customerRepository.isCustomerExist(customerId);
     }
 }

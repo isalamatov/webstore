@@ -1,6 +1,6 @@
 package webstore.repository;
 
-import webstore.model.Product;
+import webstore.domain.Product;
 
 import java.util.List;
 import java.util.Map;

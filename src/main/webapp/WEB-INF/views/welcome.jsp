@@ -11,26 +11,34 @@
 </head>
 <hr>
 <body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+<script> var currentTime = "${timeLine}" </script>
+<script>
+    function timeRenew() {
+        var time = new Date();
+        $('.ui-icon-clock').html(time);
+    }
+    $(document).ready(function (){setInterval(timeRenew,1000)});
+</script>
 <section>
     <div class="media">
-        <img src="/images/Dasha_in_GUM.jpeg" class="mr-3" alt="...">
+        <img src="<c:url value="/resource/images/gum.jpeg"></c:url>" class="mr-3" alt="image" style="height: 20%">
         <div class="media-body">
-            <h5 class="mt-0">Как однажды Айро сказал Зуко:</h5>
-            Если долго сидеть на берегу реки мимо тебя проплывет труп твоего поверженного врага.
+            <h5 class="mt-0">Once Airo told Zuko:</h5>
+            If you'd sit on the riverside for enough time you'd see your enemy's body, flowing down the river.
         </div>
+        <p class="lead">
+            <a class="ui-icon-clock">  </a>
+        </p>
+        <p class="lead">
     </div>
     <div class="jumbotron">
         <h1 class="display-4"> ${greeting} </h1>
         <p class="navbar-left"> ${tagline} </p>
-        <p><br></p>
-        <p class="lead"> Time </p>
-        <p class="lead">
-            <a class="ui-icon-clock"> <%= LocalDateTime.now().format(DateTimeFormatter.ofPattern("hh:mm dd-MM-yyyy")) %> </a>
-        </p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="/webstore/products/"
-               role="button"> Products
-            </a>
+        <br>
+        <a class="btn btn-primary btn-lg" href="/webstore/products/"
+           role="button"> Products
+        </a>
         </p>
         <p class="lead">
             <a class="btn btn-primary btn-lg" href="/webstore/customer"

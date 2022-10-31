@@ -1,5 +1,7 @@
 package webstore.controller;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class LoginController {
 
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = {RequestMethod.GET, RequestMethod.POST})
     public String login() {
     return "login";
     }

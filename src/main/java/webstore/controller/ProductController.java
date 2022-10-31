@@ -7,17 +7,29 @@ import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-import webstore.model.Product;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
+import webstore.exception.NoProductsFoundUnderCategoryException;
+import webstore.exception.ProductNotFoundException;
+import webstore.domain.Product;
 import webstore.service.ProductService;
+import webstore.validator.ProductValidator;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+import java.io.File;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 @Controller
 @RequestMapping("/products")
 public class ProductController {
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private ProductValidator productValidator;
 
     @RequestMapping
     public String list(Model model) {
@@ -27,7 +39,11 @@ public class ProductController {
 
     @RequestMapping("/{category}")
     public String getProductsByCategory(Model model, @PathVariable("category") String productCategory) {
-        model.addAttribute("products", productService.getProductsByCategory(productCategory));
+        Set<Product> products = productService.getProductsByCategory(productCategory);
+        if (products == null || products.isEmpty()) {
+            throw new NoProductsFoundUnderCategoryException();
+        }
+        model.addAttribute("products", products);
         return "products";
     }
 
@@ -62,17 +78,69 @@ public class ProductController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String processAddNewProductForm(@ModelAttribute("newProduct") Product newProduct, BindingResult result) {
+    public String processAddNewProductForm(@ModelAttribute("newProduct") @Valid Product newProduct, BindingResult result,
+                                           HttpServletRequest request) {
+        if(result.hasErrors()) {
+            return "addProduct";
+        }
         String[] suppressedFields = result.getSuppressedFields();
         if (suppressedFields.length > 0) {
             throw new RuntimeException("Attempting to bind disallowed fields: " + StringUtils.arrayToCommaDelimitedString(suppressedFields));
+        }
+        MultipartFile productImage = newProduct.getProductImage();
+        String rootDirectory = request.getSession().getServletContext().getRealPath("/");
+        String pathName = rootDirectory + "resources/images/" + newProduct.getProductId() + ".png";
+        if (productImage != null && !productImage.isEmpty()) {
+            try {
+                productImage.transferTo(new File(pathName));
+            } catch (Exception e) {
+                throw new RuntimeException("Product Image saving failed", e);
+            }
+        }
+
+        MultipartFile productManual = newProduct.getProductManual();
+        String pathNameForManuals = rootDirectory + "resources/pdf/" + newProduct.getProductId() + ".pdf";
+        if (productManual != null && !productManual.isEmpty()) {
+            try {
+                productManual.transferTo(new File(pathNameForManuals));
+            } catch (Exception e) {
+                throw new RuntimeException("Product Manual saving failed", e);
+            }
         }
         productService.addProduct(newProduct);
         return "redirect:/products";
     }
 
+    @RequestMapping("/invalidPromoCode")
+    public String invalidPromoCode() {
+        return "invalidPromoCode";
+    }
+
+    @ExceptionHandler(ProductNotFoundException.class)
+    public ModelAndView handleError(HttpServletRequest req,
+                                    ProductNotFoundException exception) {
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("invalidProductId", exception.getProductId());
+        mav.addObject("exception", exception);
+        mav.addObject("url",
+                req.getRequestURL()+"?"+req.getQueryString());
+        mav.setViewName("productNotFound");
+        return mav;
+    }
     @InitBinder
     public void initialiseBinder(WebDataBinder binder) {
-        binder.setDisallowedFields("unitsInOrder", "discontinued");
+        binder.setDisallowedFields("unitsInOrder",
+                "discontinued");
+        binder.setAllowedFields("productId",
+                "name",
+                "unitPrice",
+                "description",
+                "manufacturer",
+                "category",
+                "unitsInStock",
+                "productImage",
+                "productManual",
+                "language");
+        binder.setValidator(productValidator);
     }
 }

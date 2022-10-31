@@ -1,11 +1,28 @@
-package webstore.model;
+package webstore.domain;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.springframework.web.multipart.MultipartFile;
+import webstore.validator.ProductId;
+import webstore.validator.ProductImage;
+
+import javax.validation.constraints.*;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Product {
+@XmlRootElement
+public class Product implements Serializable {
+    private static final long serialVersionUID = -8921011478183193345L;
+    @Pattern(regexp = "P[0-9]+", message = "{Pattern.Product.productId.validation}")
+    @ProductId
     private String productId;
+    @Size(min = 4, max = 50, message = "{Size.Product.name.validation}")
     private String name;
+    @Min(value = 0, message = "Min.Product.unitPrice.validation}")
+    @Digits(integer = 8, fraction = 2, message = "{Digits.Product.unitPrice. validation}")
+    @NotNull(message = "{NotNull.Product.unitPrice.validation}")
     private BigDecimal unitPrice;
     private String description;
     private String manufacturer;
@@ -14,6 +31,14 @@ public class Product {
     private long unitsInOrder;
     private boolean discontinued;
     private String condition;
+
+    @JsonIgnore
+    @ProductImage(size = 10240000L)
+    private MultipartFile productImage;
+
+    @JsonIgnore
+    private MultipartFile productManual;
+
 
     public Product() {
         super();
@@ -106,6 +131,25 @@ public class Product {
         this.condition = condition;
     }
 
+    public void setProductImage(MultipartFile file) {
+        this.productImage = file;
+    }
+
+    @XmlTransient
+    public MultipartFile getProductImage() {
+        return this.productImage;
+    }
+
+    public void setProductManual(MultipartFile file) {
+        this.productManual = file;
+    }
+
+    @XmlTransient
+    public MultipartFile getProductManual() {
+        return this.productManual;
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -145,4 +189,6 @@ public class Product {
     public String toString() {
         return "Product [productId=" + productId + ", name=" + name + "]";
     }
+
+
 }

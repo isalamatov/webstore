@@ -38,15 +38,15 @@
                             <p> ${SPRING_SECURITY_LAST_EXCEPTION.cause}</p>
                         </div>
                     </c:if>
-                    <form action="<c:url value="/login"></c:url>" method="post">
+                    <form action="<c:url value="/j_spring_security_check"></c:url>" method="post">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="User Name" name='username' type="text">
+                                <input class="form-control" placeholder="User Name" name='j_username' type="text" value="">
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name='password' type="password">
+                                <input class="form-control" placeholder="Password" name='j_password' type="password">
                             </div>
-                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+<%--                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>--%>
                             <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
                         </fieldset>
                     </form>

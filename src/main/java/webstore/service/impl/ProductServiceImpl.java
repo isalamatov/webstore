@@ -2,7 +2,7 @@ package webstore.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import webstore.model.Product;
+import webstore.domain.Product;
 import webstore.repository.ProductRepository;
 import webstore.service.ProductService;
 

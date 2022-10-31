@@ -225,3 +225,55 @@
 2022-10-3109:34:28 INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Sun Oct 30 15:34:37 MSK 2022]; parent: Root WebApplicationContext
 2022-10-3109:34:28 INFO  GenericWebApplicationContext:873 - Closing Flow ApplicationContext [checkout]: startup date [Sun Oct 30 15:34:50 MSK 2022]; parent: WebApplicationContext for namespace 'DispatcherServlet-servlet'
 2022-10-3109:34:28 INFO  XmlWebApplicationContext:873 - Closing Root WebApplicationContext: startup date [Sun Oct 30 15:34:36 MSK 2022]; root of context hierarchy
+2022-10-3111:28:29 INFO  Version:27 - HV000001: Hibernate Validator 4.3.1.Final
+2022-10-3111:28:29 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/
+2022-10-3111:28:29 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:28:29
+2022-10-3111:28:29 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:28:29
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 605 ms
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:28:30
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:28:30
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 3 ms
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/gum.jpeg
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:28:30
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:28:30
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 3 ms
+2022-10-3111:28:30 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/products/
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:28:33
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:28:33
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 141 ms
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1234.png
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:28:33
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:28:33
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1236.png
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/P1235.png
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:28:33
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:28:33
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:28:33
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 2 ms
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:28:33
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 3 ms
+2022-10-3111:28:33 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:29:34 INFO  Version:27 - HV000001: Hibernate Validator 4.3.1.Final
+2022-10-3111:29:34 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/
+2022-10-3111:29:34 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:29:34
+2022-10-3111:29:34 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:29:34
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 566 ms
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:29:35
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:29:35
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 3 ms
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:40 - =======================================================
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:24 - Accessing URL path/webstore/resource/images/gum.jpeg
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:25 - Reqest processing started on31/10/2022 at 11:29:35
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:31 - Request processing ended on 31/10/2022 at 11:29:35
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:38 - Total time taken for processing: 3 ms
+2022-10-3111:29:35 INFO  PerfomanceMonitorInterceptor:40 - =======================================================

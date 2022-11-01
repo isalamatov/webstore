@@ -9,25 +9,11 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
-    <link rel="stylesheet"
-          href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <title>Products</title>
 </head>
-<body>
-<section>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Products</h1>
-            <p>All the available products in our store</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="/webstore"
-                   role="button"> Home
-                </a>
-            </p>
-        </div>
-    </div>
-</section>
+
 <section class="container">
     <div class="row">
         <c:forEach items="${products}" var="product">
@@ -52,5 +38,4 @@
         </c:forEach>
     </div>
 </section>
-</body>
 </html>

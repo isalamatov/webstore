@@ -6,27 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
-    <link rel="stylesheet"
-          href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <title>Products</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <title>Customers</title>
 </head>
-<body>
-<section>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Customers</h1>
-            <p>All customers</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="/webstore"
-                   role="button"> Home
-                </a>
-            </p>
-        </div>
-    </div>
-</section>
+
 <section class="container">
     <div class="row">
         <c:forEach items="${customers}" var="customer">
@@ -43,5 +30,4 @@
         </c:forEach>
     </div>
 </section>
-</body>
 </html>

@@ -47,6 +47,7 @@ public class CartRestController {
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void addItem(@PathVariable String productId, HttpServletRequest request) {
         String sessionId = request.getSession(true).getId();
+        System.out.println(sessionId);
         Cart cart = cartService.read(sessionId);
         if (cart == null) {
             cart = cartService.create(new Cart(sessionId));

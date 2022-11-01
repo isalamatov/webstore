@@ -4,22 +4,12 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <link rel="stylesheet"
-          href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <title>Cart</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
     <script src="/webstore/resource/js/controllers.js"></script>
-    <title>Cart</title>
 </head>
-<body>
-<section>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Cart</h1>
-            <p>All the selected products in your cart</p>
-        </div>
-    </div>
-</section>
+
 
 <section class="container" ng-app="cartApp">
     <div ng-controller="cartCtrl" ng-init="initCartId('${cartId}')">
@@ -58,11 +48,10 @@
         <a href="<spring:url value="/products" />" class="btn btn-default">
             <span class="glyphicon-hand-left glyphicon"></span> Continue shopping
         </a>
-        <a href= "<spring:url value="/checkout?cartId=${cartId}"/>"
+        <a href="<spring:url value="/checkout?cartId=${cartId}"/>"
            class="btn btn-success pull-right"> <span
                 class="glyphicon-shopping-cart glyphicon"></span> Check out
         </a>
     </div>
 </section>
-</body>
 </html>

@@ -10,21 +10,10 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html
-charset=ISO-8859-1">
-    <link rel="stylesheet"
-          href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <title>Welcome</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <title>Product not found</title>
 </head>
-<body>
-<section>
-    <div class="jumbotron">
-        <div class="container">
-            <h1 class="alert alert-danger"> There is no product
-                found with the Product id ${invalidProductId}</h1>
-        </div>
-    </div>
-</section>
 <section>
     <div class="container">
         <p>${url}</p>
@@ -40,5 +29,4 @@ charset=ISO-8859-1">
         </p>
     </div>
 </section>
-</body>
 </html>

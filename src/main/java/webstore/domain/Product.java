@@ -1,6 +1,7 @@
 package webstore.domain;
 
 import org.codehaus.jackson.annotate.JsonIgnore;
+import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
 import webstore.validator.ProductId;
 import webstore.validator.ProductImage;
@@ -42,6 +43,7 @@ public class Product implements Serializable {
 
     public Product() {
         super();
+        this.productImage = new MockMultipartFile("file", new byte[] {0,0});
     }
 
     public Product(String productId, String name, BigDecimal
@@ -49,6 +51,7 @@ public class Product implements Serializable {
         this.productId = productId;
         this.name = name;
         this.unitPrice = unitPrice;
+        this.productImage = new MockMultipartFile("file", new byte[] {0,0});
     }
 
     public String getProductId() {

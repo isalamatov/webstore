@@ -1,6 +1,7 @@
 package webstore.validator;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import webstore.exception.ProductNotFoundException;
 import webstore.domain.Product;
 import webstore.service.ProductService;
@@ -20,7 +21,7 @@ public class ProductIdValidator implements ConstraintValidator<ProductId, String
         Product product;
         try {
             product = productService.getProductById(value);
-        } catch (ProductNotFoundException e) {
+        } catch (EmptyResultDataAccessException e) {
             return true;
         }
         if (product != null) {

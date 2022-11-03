@@ -15,7 +15,7 @@
 			<div class="container">
 				<h1 class="alert alert-danger"> Thank you</h1>
 				<p>Thanks for the order. your order will be delivered to you on 
-				<fmt:formatDate type="date"	value="${order.shippingDetail.shippingDate}" />!</p>
+				${order.shippingDetail.shippingDate}!</p>
 				<p>Your Order Number is ${order.orderId}</p>
 			</div>
 		</div>

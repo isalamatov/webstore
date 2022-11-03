@@ -48,8 +48,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 text-right">
 							<p>
-								<em>Shipping DateDate: <fmt:formatDate type="date"
-										value="${order.shippingDetail.shippingDate}" /></em>
+								<em>Shipping DateDate: ${order.shippingDetail.shippingDate}/></em>
 							</p>
 						</div>
 					</div>

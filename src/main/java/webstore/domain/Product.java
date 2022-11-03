@@ -30,7 +30,7 @@ public class Product implements Serializable {
     private String category;
     private long unitsInStock;
     private long unitsInOrder;
-    private boolean discontinued;
+    private boolean discounted;
     private String condition;
 
     @JsonIgnore
@@ -52,6 +52,20 @@ public class Product implements Serializable {
         this.name = name;
         this.unitPrice = unitPrice;
         this.productImage = new MockMultipartFile("file", new byte[] {0,0});
+    }
+
+    public Product(String productId, String name, BigDecimal unitPrice, String description, String manufacturer,
+                   String category, long unitsInStock, long unitsInOrder, boolean discounted, String condition) {
+         this.productId = productId;
+         this.name = name;
+         this.unitPrice = unitPrice;
+         this.description = description;
+         this.manufacturer = manufacturer;
+         this.category = category;
+         this.unitsInStock = unitsInStock;
+         this.unitsInOrder = unitsInOrder;
+         this.discounted = discounted;
+         this.condition = condition;
     }
 
     public String getProductId() {
@@ -118,12 +132,12 @@ public class Product implements Serializable {
         this.unitsInOrder = unitsInOrder;
     }
 
-    public boolean isDiscontinued() {
-        return discontinued;
+    public boolean isdiscounted() {
+        return discounted;
     }
 
-    public void setDiscontinued(boolean discontinued) {
-        this.discontinued = discontinued;
+    public void setdiscounted(boolean discounted) {
+        this.discounted = discounted;
     }
 
     public String getCondition() {
@@ -162,7 +176,7 @@ public class Product implements Serializable {
 
         if (unitsInStock != product.unitsInStock) return false;
         if (unitsInOrder != product.unitsInOrder) return false;
-        if (discontinued != product.discontinued) return false;
+        if (discounted != product.discounted) return false;
         if (!Objects.equals(productId, product.productId)) return false;
         if (!Objects.equals(name, product.name)) return false;
         if (!Objects.equals(unitPrice, product.unitPrice)) return false;
@@ -183,7 +197,7 @@ public class Product implements Serializable {
         result = 31 * result + (category != null ? category.hashCode() : 0);
         result = 31 * result + (int) (unitsInStock ^ (unitsInStock >>> 32));
         result = 31 * result + (int) (unitsInOrder ^ (unitsInOrder >>> 32));
-        result = 31 * result + (discontinued ? 1 : 0);
+        result = 31 * result + (discounted ? 1 : 0);
         result = 31 * result + (condition != null ? condition.hashCode() : 0);
         return result;
     }

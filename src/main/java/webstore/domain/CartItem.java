@@ -13,6 +13,12 @@ public class CartItem implements Serializable {
         this.quantity = 1;
     }
 
+    public CartItem(Product product, int quantity, BigDecimal totalPrice) {
+        this.product = product;
+        this.quantity = quantity;
+        this.totalPrice = totalPrice;
+    }
+
     public CartItem(Product product) {
         super();
         this.product = product;

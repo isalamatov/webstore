@@ -14,6 +14,13 @@ public class Customer implements Serializable {
         this.billingAddress = new Address();
     }
 
+    public Customer(String customerId, String name, Address billingAddress, String phoneNumber) {
+        this.customerId = customerId;
+        this.name = name;
+        this.billingAddress = billingAddress;
+        this.phoneNumber = phoneNumber;
+    }
+
     public Customer(String customerId, String name) {
         this();
         this.customerId = customerId;

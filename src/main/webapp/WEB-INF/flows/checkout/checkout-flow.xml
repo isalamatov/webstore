@@ -61,12 +61,17 @@ http://www.springframework.org/schema/webflow/spring-webflow.xsd">
     <view-state id="InvalidCartWarning">
         <transition to="endState"/>
     </view-state>
+
     <view-state id="thankCustomer" model="order">
         <transition to="endState"/>
     </view-state>
+
     <end-state id="endState"/>
+
     <end-state id="cancelCheckout" view="checkOutCancelled.jsp"/>
+
     <global-transitions>
         <transition on="cancel" to="endState"/>
     </global-transitions>
+
 </flow>

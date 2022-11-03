@@ -27,21 +27,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="<c:url value="/resource/images/gum.jpeg"></c:url>" class="mr-3" alt="image"
+                    <img src="<c:url value="/resource/images/welcome_1.png"></c:url>" class="mr-3" alt="image"
                          style="width: 100%">
                 </div>
                 <div class="col-sm-4">
-                    <img src="<c:url value="/resource/images/grass.jpeg"></c:url>" class="mr-3" alt="image"
+                    <img src="<c:url value="/resource/images/welcome_2.png"></c:url>" class="mr-3" alt="image"
                          style="width: 100%">
                 </div>
                 <div class="col-sm-4">
-                    <img src="<c:url value="/resource/images/gum.jpeg"></c:url>" class="mr-3" alt="image"
+                    <img src="<c:url value="/resource/images/welcome_3.png"></c:url>" class="mr-3" alt="image"
                          style="width: 100%">
                 </div>
             </div>
             <div class="media-body">
-                <h5 class="mt-0">Once Airo told Zuko:</h5>
-                If you'd sit on the riverside for enough time you'd see your enemy's body, flowing down the river.
+                <h5 class="mt-0">The only way to buy something is to sell something</h5>
+                Folk wisdom.
             </div>
             <p class="lead">
                 <a class="ui-icon-clock"> </a>

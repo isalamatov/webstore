@@ -9,7 +9,7 @@ public class ShippingDetail implements Serializable {
     private static final long serialVersionUID = 6350930334140807514L;
     private String name;
     @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date shippingDate;
+    private String shippingDate;
     private Address shippingAddress;
 
     public ShippingDetail() {
@@ -24,11 +24,11 @@ public class ShippingDetail implements Serializable {
         this.name = name;
     }
 
-    public Date getShippingDate() {
+    public String getShippingDate() {
         return shippingDate;
     }
 
-    public void setShippingDate(Date shippingDate) {
+    public void setShippingDate(String shippingDate) {
         this.shippingDate = shippingDate;
     }
 

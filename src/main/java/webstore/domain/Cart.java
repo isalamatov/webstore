@@ -17,6 +17,12 @@ public class Cart implements Serializable {
         grandTotal = new BigDecimal(0);
     }
 
+    public Cart(String cartId, Map<String, CartItem> cartItems, BigDecimal grandTotal) {
+        this.cartId = cartId;
+        this.cartItems = cartItems;
+        this.grandTotal = grandTotal;
+    }
+
     public Cart(String cartId) {
         this();
         this.cartId = cartId;
@@ -46,8 +52,7 @@ public class Cart implements Serializable {
         String productId = item.getProduct().getProductId();
         if (cartItems.containsKey(productId)) {
             CartItem existingCartItem = cartItems.get(productId);
-            existingCartItem.setQuantity(existingCartItem.getQuantity
-                    () + item.getQuantity());
+            existingCartItem.setQuantity(existingCartItem.getQuantity() + item.getQuantity());
             cartItems.put(productId, existingCartItem);
         } else {
             cartItems.put(productId, item);

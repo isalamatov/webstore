@@ -8,7 +8,6 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
     <security:http auto-config="true">
         <security:intercept-url pattern="/products/add" access="ROLE_ADMIN" />
-
         <security:form-login login-page="/login"
                              default-target-url="/products/add"
                              authentication-failure-url="/loginfailed"/>
@@ -18,7 +17,7 @@
     <security:authentication-manager>
         <security:authentication-provider>
             <security:user-service>
-                <security:user name="admin" password="admin" authorities="ROLE_ADMIN" />
+                <security:user name="admin" password="nidma" authorities="ROLE_ADMIN" />
             </security:user-service>
         </security:authentication-provider>
     </security:authentication-manager>

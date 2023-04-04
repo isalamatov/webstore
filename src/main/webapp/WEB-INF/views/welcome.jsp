@@ -48,22 +48,7 @@
             </p>
             <p class="lead">
         </div>
-        <div class="jumbotron">
-            <h1 class="display-4"> ${greeting} </h1>
-            <p class="navbar-left"> ${tagline} </p>
-            <br>
-            <div class="d-grid gap-2">
-                <a class="btn btn-primary btn-lg" href="/webstore/products/"
-                   role="button"> Products
-                </a>
-                <a class="btn btn-primary btn-lg" href="/webstore/customer"
-                   role="button"> Customers
-                </a>
-                <a class="btn btn-primary btn-lg" href="/webstore/products/add"
-                   role="button"> Add new product
-                </a>
-            </div>
-        </div>
+    </div>
 </section>
 </body>
 </html>

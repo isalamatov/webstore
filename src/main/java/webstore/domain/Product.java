@@ -21,10 +21,11 @@ public class Product implements Serializable {
     private String productId;
     @Size(min = 4, max = 50, message = "{Size.Product.name.validation}")
     private String name;
-    @Min(value = 0, message = "Min.Product.unitPrice.validation}")
+    @Min(value = 0, message = "{Min.Product.unitPrice.validation}")
     @Digits(integer = 8, fraction = 2, message = "{Digits.Product.unitPrice. validation}")
     @NotNull(message = "{NotNull.Product.unitPrice.validation}")
     private BigDecimal unitPrice;
+    @NotNull(message = "{NotNull.Product.description.validation}")
     private String description;
     private String manufacturer;
     private String category;

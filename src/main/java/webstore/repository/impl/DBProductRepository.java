@@ -98,6 +98,32 @@ public class DBProductRepository implements ProductRepository {
     }
 
     @Override
+    public void update(Product product) {
+        String sqlQueryUpdate = "UPDATE products SET " +
+                " name = ?, " +
+                " unit_price = ?, " +
+                " description = ?, " +
+                " manufacturer = ?, " +
+                " category =?, " +
+                " units_in_stock =?," +
+                " units_in_order =?," +
+                " discounted =?," +
+                " condition =?" +
+                " WHERE product_id = ?";
+        jdbcTemplate.update(sqlQueryUpdate,
+                product.getName(),
+                product.getUnitPrice(),
+                product.getDescription(),
+                product.getManufacturer(),
+                product.getCategory(),
+                product.getUnitsInStock(),
+                product.getUnitsInOrder(),
+                product.isdiscounted(),
+                product.getCondition(),
+                product.getProductId());
+    }
+
+    @Override
     public Set<Product> getProductsByFilterPrice(Map<String, List<String>> filterParams) {
         //TODO Replace with proper SQL query
         List<Product> listOfProducts = getAllProducts();
@@ -118,7 +144,8 @@ public class DBProductRepository implements ProductRepository {
     @Override
     public List<Product> getProductsByManufacturer(String manufacturer) {
         String sqlQueryGetByCategory = "SELECT * FROM products WHERE manufacturer = ?";
-        return jdbcTemplate.query(sqlQueryGetByCategory, (rs, rn) -> makeProduct(rs), manufacturer);    }
+        return jdbcTemplate.query(sqlQueryGetByCategory, (rs, rn) -> makeProduct(rs), manufacturer);
+    }
 
     private Product makeProduct(ResultSet rs) throws SQLException {
         String productId = rs.getString("product_id");

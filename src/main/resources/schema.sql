@@ -1,3 +1,4 @@
+-- TRUNCATE addresses, shipping_details, products, customers, carts, orders;
 
 CREATE TABLE IF NOT EXISTS public.addresses
 (
@@ -10,9 +11,6 @@ CREATE TABLE IF NOT EXISTS public.addresses
     zip_code character varying(254),
     CONSTRAINT addresses_pkey PRIMARY KEY (adress_id)
 );
-
-COMMENT ON TABLE public.addresses
-    IS 'Billing and shipping addresses';
 
 CREATE TABLE IF NOT EXISTS public.products
 (
@@ -29,13 +27,10 @@ CREATE TABLE IF NOT EXISTS public.products
     CONSTRAINT products_pkey PRIMARY KEY (product_id)
 );
 
-COMMENT ON TABLE public.products
-    IS 'Products repository';
-
 CREATE TABLE IF NOT EXISTS public.customers
 (
     customer_id character varying(254) NOT NULL,
-    name character varying(254) COLLATE NOT NULL,
+    name character varying(254) NOT NULL,
     phone_number character varying(254),
     billing_address_id bigint,
     CONSTRAINT customers_pkey PRIMARY KEY (customer_id),

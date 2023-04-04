@@ -50,6 +50,7 @@
                         code="addProduct.form.description.label"/></label>
                 <div class="col-lg-10">
                     <form:textarea id="description" path="description" rows="2"/>
+                    <form:errors path="description" cssClass="text-danger"/>
                 </div>
             </div>
 
@@ -58,6 +59,7 @@
                         code="addProduct.form.manufacturer.label"/></label>
                 <div class="col-lg-10">
                     <form:input id="manufacturer" path="manufacturer" type="text" class="form:input-large"/>
+                    <form:errors path="manufacturer" cssClass="text-danger"/>
                 </div>
             </div>
 
@@ -66,6 +68,7 @@
                         code="addProduct.form.category.label"/></label>
                 <div class="col-lg-10">
                     <form:input id="category" path="category" type="text" class="form:input-large"/>
+                    <form:errors path="category" cssClass="text-danger"/>
                 </div>
             </div>
 
@@ -74,6 +77,7 @@
                         code="addProduct.form.unitsInStock.label"/></label>
                 <div class="col-lg-10">
                     <form:input id="unitsInStock" path="unitsInStock" type="text" class="form:input-large"/>
+                    <form:errors path="unitsInStock" cssClass="text-danger"/>
                 </div>
             </div>
 
@@ -94,6 +98,7 @@
                 <div class="col-lg-10">
                     <form:input id="productImage" path="productImage" type="file"
                                 class="form:input-large"/>
+                    <form:errors path="productImage" cssClass="text-danger"/>
                 </div>
             </div>
 
@@ -104,6 +109,7 @@
                 <div class="col-lg-10">
                     <form:input id="productManual" path="productManual" type="file"
                                 class="form:input-large"/>
+                    <form:errors path="productManual" cssClass="text-danger"/>
                 </div>
             </div>
 

@@ -53,6 +53,7 @@ http://www.springframework.org/schema/webflow/spring-webflow.xsd">
     </view-state>
 
     <action-state id="processOrder">
+        <evaluate expression="orderServiceImpl.proccessOrder(order)"/>
         <evaluate expression="orderServiceImpl.saveOrder(order)"
                   result="order.orderId"/>
         <transition to="thankCustomer"/>
@@ -60,6 +61,10 @@ http://www.springframework.org/schema/webflow/spring-webflow.xsd">
 
     <view-state id="InvalidCartWarning">
         <transition to="endState"/>
+    </view-state>
+
+    <view-state id="InvalidCustomerWarning">
+        <transition to="collectCustomerInfo"/>
     </view-state>
 
     <view-state id="thankCustomer" model="order">

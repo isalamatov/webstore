@@ -15,7 +15,7 @@ public class ProductValidator implements Validator {
     private Set<Validator> springValidators;
 
     public ProductValidator() {
-        springValidators = new HashSet<Validator>();
+        springValidators = new HashSet<>();
     }
 
     public void setSpringValidators(Set<Validator> springValidators) {
@@ -28,8 +28,7 @@ public class ProductValidator implements Validator {
 
     public void validate(Object target, Errors errors) {
         Set<ConstraintViolation<Object>> constraintViolations = beanValidator.validate(target);
-        for (ConstraintViolation<Object> constraintViolation :
-                constraintViolations) {
+        for (ConstraintViolation<Object> constraintViolation : constraintViolations) {
             String propertyPath = constraintViolation.getPropertyPath().toString();
             String message = constraintViolation.getMessage();
             errors.rejectValue(propertyPath, "", message);

@@ -1,5 +1,6 @@
 package webstore.controller;
 
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +14,6 @@ import javax.servlet.http.HttpServletRequest;
 public class CartController {
     @RequestMapping
     public String get(HttpServletRequest request) {
-        System.out.println(request.getSession(true).getId());
         return "redirect:/cart/" + request.getSession(true).getId();
     }
 

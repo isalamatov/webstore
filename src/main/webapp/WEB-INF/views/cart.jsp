@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <title>Cart</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
-    <script src="/webstore/resource/js/controllers.js"></script>
+    <script src="${pageContext.request.contextPath}/resource/js/controllers.js"></script>
 </head>
 
 

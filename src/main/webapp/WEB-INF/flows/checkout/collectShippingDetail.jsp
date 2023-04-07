@@ -19,6 +19,13 @@
 		</div>
 	</section>
 	<section class="container">
+		<c:forEach items="${flowRequestContext.messageContext.allMessages}" var="message">
+		<li>
+			Message Source is ${message.source}
+			<br>
+			Message Text is ${message.text}
+		</li>
+		</c:forEach>
 		<form:form modelAttribute="order.shippingDetail" class="form-horizontal">
 			<fieldset>
 				<legend>Shipping Details</legend>

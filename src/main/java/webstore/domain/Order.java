@@ -1,5 +1,9 @@
 package webstore.domain;
 
+import org.springframework.binding.message.MessageBuilder;
+import org.springframework.binding.message.MessageContext;
+import org.springframework.binding.validation.ValidationContext;
+
 import java.io.Serializable;
 public class Order implements Serializable{
     private static final long serialVersionUID = -3560539622417210365L;
@@ -42,6 +46,18 @@ public class Order implements Serializable{
 
     public void setShippingDetail(ShippingDetail shippingDetail) {
         this.shippingDetail = shippingDetail;
+    }
+
+    public void validateCollectCustomerInfo(ValidationContext context) {
+        MessageContext messages = context.getMessageContext();
+        if (getCustomer().getName().isEmpty()) {
+            messages.addMessage(new MessageBuilder().error().source("name").defaultText("Name should not be empty")
+                    .build());
+        }
+        if (getCustomer().getBillingAddress().equals(null)) {
+            messages.addMessage(new MessageBuilder().error().source("name").defaultText("Address should not be empty")
+                    .build());
+        }
     }
 
     @Override

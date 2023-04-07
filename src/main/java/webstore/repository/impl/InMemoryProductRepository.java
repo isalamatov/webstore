@@ -93,6 +93,11 @@ public class InMemoryProductRepository implements ProductRepository {
     }
 
     @Override
+    public void update(Product product) {
+        
+    }
+
+    @Override
     public Set<Product> getProductsByFilterPrice(Map<String, List<String>> filterParams) {
         Set<Product> result = new HashSet<>();
         for (Product product : listOfProducts) {

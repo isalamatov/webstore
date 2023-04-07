@@ -24,7 +24,8 @@ cartApp.controller('cartCtrl',  function ($scope, $http) {
         $http.put('/webstore/rest/cart/add/'+productId)
             .success(function(data) {
                 $scope.refreshCart($http.get('/webstore/rest/cart/get/cartId'));
-                alert("Product Successfully added to the Cart!");
+                alert('Product' + productId + 'successfully added to the Cart!');
+                console.log('Product' + productId + 'successfully added to the Cart!')
             });
     };
     $scope.removeFromCart = function(productId) {

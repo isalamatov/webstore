@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <title>Welcome to webstore</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script> var currentTime = "${timeLine}" </script>
     <script>
         function timeRenew() {
-            var time = new Date();
+            let time = new Date();
             $('.ui-icon-clock').html(time);
         }
 

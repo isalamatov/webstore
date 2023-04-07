@@ -48,7 +48,7 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 text-right">
 							<p>
-								<em>Shipping DateDate: ${order.shippingDetail.shippingDate}/></em>
+								<em>Shipping DateDate: ${order.shippingDetail.shippingDate}></em>
 							</p>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 								${order.customer.billingAddress.areaName},${order.customer.billingAddress.state}
 								<br>
 								${order.customer.billingAddress.country},${order.customer.billingAddress.zipCode}
-								<br> <abbr title="Phone">P:</abbr>
+								<br> <abbr title="Phone">Phone:</abbr>
 								${order.customer.phoneNumber}
 							</address>
 						</div>

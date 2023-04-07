@@ -1,12 +1,21 @@
 package webstore.domain;
 
+import org.springframework.binding.message.MessageBuilder;
+import org.springframework.binding.message.MessageContext;
+import org.springframework.binding.validation.ValidationContext;
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
+@Validated
 public class Customer implements Serializable {
     private static final long serialVersionUID = 2284040482222162898L;
     private String customerId;
+    @NotNull
     private String name;
     private Address billingAddress;
+    @NotNull
     private String phoneNumber;
 
     public Customer() {

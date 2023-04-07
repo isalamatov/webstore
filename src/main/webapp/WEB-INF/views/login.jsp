@@ -19,13 +19,6 @@
                         <div class="alert alert-danger">
                             <spring:message code="AbstractUserDetailsAuthenticationProvider.badCredentials"/>
                             <br/>
-                            <p> ${error} </p>
-                            <br/>
-                            <p> ${SPRING_SECURITY_LAST_EXCEPTION.message}</p>
-                            <br/>
-                            <p> ${SPRING_SECURITY_LAST_EXCEPTION.stackTrace}</p>
-                            <br/>
-                            <p> ${SPRING_SECURITY_LAST_EXCEPTION.cause}</p>
                         </div>
                     </c:if>
                     <form action="<c:url value="/j_spring_security_check"></c:url>" method="post">

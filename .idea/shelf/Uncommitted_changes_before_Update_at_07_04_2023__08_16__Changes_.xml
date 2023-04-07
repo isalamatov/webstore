@@ -1,0 +1,74 @@
+<changelist name="Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]" date="1680844569308" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 07.04.2023, 08:16 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/webstore/WEB-INF/classes/webstore/repository/impl/InMemoryCustomerRepository.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/images/grass.jpeg" />
+    <option name="AFTER_PATH" value="src/main/webapp/WEB-INF/images/images/grass.jpeg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/grass.jpeg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/webstore/WEB-INF/classes/webstore/controller/OrderController.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/log/webstore-performance.log.1" />
+    <option name="AFTER_PATH" value="src/main/webapp/WEB-INF/images/log/webstore-performance.log.1" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/webstore-performance.log.1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/webstore.war" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/images/gum.jpeg" />
+    <option name="AFTER_PATH" value="src/main/webapp/WEB-INF/images/images/gum.jpeg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/gum.jpeg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/log/webstore-performance.log" />
+    <option name="AFTER_PATH" value="src/main/webapp/WEB-INF/images/log/webstore-performance.log" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/webstore-performance.log" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/libs/jaxb-api-2.4.0-b180830.0359.jar" />
+    <option name="AFTER_PATH" value="src/main/webapp/WEB-INF/images/libs/jaxb-api-2.4.0-b180830.0359.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/jaxb-api-2.4.0-b180830.0359.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/libs/jaxb-api-2.0.jar" />
+    <option name="AFTER_PATH" value="src/main/webapp/WEB-INF/images/libs/jaxb-api-2.0.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/jaxb-api-2.0.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/log/webstore-audit.log" />
+    <option name="AFTER_PATH" value="src/main/webapp/WEB-INF/images/log/webstore-audit.log" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/webstore-audit.log" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/asm-3.3.1.jar" />
+    <option name="AFTER_PATH" value="src/main/webapp/WEB-INF/images/asm-3.3.1.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2023,_08_16_[Changes]/asm-3.3.1.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/webstore/WEB-INF/classes/webstore/service/CustomerService.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/webstore/WEB-INF/classes/webstore/service/impl/CustomerServiceImpl.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/webstore/WEB-INF/classes/webstore/repository/CustomerRepository.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>

@@ -1,0 +1,340 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n    <groupId>com.packt</groupId>\n    <artifactId>webstore</artifactId>\n    <version>0.0.1-SNAPSHOT</version>\n    <packaging>war</packaging>\n    <dependencies>\n        <dependency>\n            <groupId>org.springframework</groupId>\n            <artifactId>spring-webmvc</artifactId>\n            <version>4.0.3.RELEASE</version>\n        </dependency>\n\n        <dependency>\n            <groupId>javax.servlet</groupId>\n            <artifactId>jstl</artifactId>\n            <version>1.2</version>\n        </dependency>\n\n        <dependency>\n            <groupId>javax.servlet</groupId>\n            <artifactId>javax.servlet-api</artifactId>\n            <version>3.1.0</version>\n            <scope>provided</scope>\n        </dependency>\n\n        <dependency>\n            <groupId>org.springframework.security</groupId>\n            <artifactId>spring-security-config</artifactId>\n            <version>3.1.4.RELEASE</version>\n            <exclusions>\n                <exclusion>\n                    <artifactId>spring-asm</artifactId>\n                    <groupId>org.springframework</groupId>\n                </exclusion>\n            </exclusions>\n        </dependency>\n\n        <dependency>\n            <groupId>org.springframework.security</groupId>\n            <artifactId>spring-security-web</artifactId>\n            <version>3.1.4.RELEASE</version>\n        </dependency>\n\n        <dependency>\n            <groupId>commons-fileupload</groupId>\n            <artifactId>commons-fileupload</artifactId>\n            <version>1.2.2</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.apache.commons</groupId>\n            <artifactId>commons-io</artifactId>\n            <version>1.3.2</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.springframework</groupId>\n            <artifactId>spring-oxm</artifactId>\n            <version>4.0.3.RELEASE</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.codehaus.jackson</groupId>\n            <artifactId>jackson-mapper-asl</artifactId>\n            <version>1.9.10</version>\n        </dependency>\n\n        <dependency>\n            <groupId>log4j</groupId>\n            <artifactId>log4j</artifactId>\n            <version>1.2.12</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.hibernate</groupId>\n            <artifactId>hibernate-validator</artifactId>\n            <version>4.3.1.Final</version>\n        </dependency>\n\n        <dependency>\n            <groupId>javax.xml.bind</groupId>\n            <artifactId>javax.xml.bind</artifactId>\n            <version>2.4.0</version>\n            <systemPath>${project.basedir}/src/main/resources/libs/jaxb-api-2.0.jar</systemPath>\n            <scope>system</scope>\n        </dependency>\n\n        <dependency>\n            <groupId>com.sun.xml.bind</groupId>\n            <artifactId>jaxb-impl</artifactId>\n            <version>2.3.4</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.springframework.webflow</groupId>\n            <artifactId>spring-webflow</artifactId>\n            <version>2.3.3.RELEASE</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.apache.tiles</groupId>\n            <artifactId>tiles-extras</artifactId>\n            <version>3.0.3</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.slf4j</groupId>\n            <artifactId>slf4j-api</artifactId>\n            <version>1.7.5</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.slf4j</groupId>\n            <artifactId>slf4j-simple</artifactId>\n            <version>1.7.5</version>\n        </dependency>\n\n        <dependency>\n            <groupId>junit</groupId>\n            <artifactId>junit</artifactId>\n            <version>4.11</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.springframework</groupId>\n            <artifactId>spring-test</artifactId>\n            <version>4.0.3.RELEASE</version>\n        </dependency>\n\n        <dependency>\n            <groupId>com.jayway.jsonpath</groupId>\n            <artifactId>json-path</artifactId>\n            <version>0.9.1</version>\n            <scope>test</scope>\n        </dependency>\n\n        <dependency>\n            <groupId>com.jayway.jsonpath</groupId>\n            <artifactId>json-path-assert</artifactId>\n            <version>0.9.1</version>\n            <scope>test</scope>\n        </dependency>\n\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-data-jdbc</artifactId>\n            <version>2.7.4</version>\n        </dependency>\n\n        <dependency>\n            <groupId>org.postgresql</groupId>\n            <artifactId>postgresql</artifactId>\n            <version>42.3.7</version>\n        </dependency>\n\n    </dependencies>\n\n    <properties>\n        <maven.compiler.source>8</maven.compiler.source>\n        <maven.compiler.target>8</maven.compiler.target>\n    </properties>\n\n    <build>\n        <finalName>webstore</finalName>\n    </build>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision ee38bf80455d7ee03134b27cd6fe3a63166cda50)
++++ b/pom.xml	(date 1680844502075)
+@@ -163,5 +163,15 @@
+ 
+     <build>
+         <finalName>webstore</finalName>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
+     </build>
+ </project>
+\ No newline at end of file
+Index: target/webstore/WEB-INF/web.xml
+===================================================================
+diff --git a/target/webstore/WEB-INF/web.xml b/target/webstore/WEB-INF/web.xml
+deleted file mode 100644
+--- a/target/webstore/WEB-INF/web.xml	(revision ee38bf80455d7ee03134b27cd6fe3a63166cda50)
++++ /dev/null	(revision ee38bf80455d7ee03134b27cd6fe3a63166cda50)
+@@ -1,54 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+-		 						 http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+-    <context-param>
+-        <param-name>contextConfigLocation</param-name>
+-        <param-value>
+-            /WEB-INF/spring/webcontext/security-context.xml
+-        </param-value>
+-    </context-param>
+-
+-    <listener>
+-        <listener-class>
+-            org.springframework.web.context.ContextLoaderListener
+-        </listener-class>
+-    </listener>
+-
+-    <filter>
+-        <filter-name>springSecurityFilterChain</filter-name>
+-        <filter-class>
+-            org.springframework.web.filter.DelegatingFilterProxy
+-        </filter-class>
+-    </filter>
+-
+-    <filter-mapping>
+-        <filter-name>springSecurityFilterChain</filter-name>
+-        <url-pattern>/*</url-pattern>
+-    </filter-mapping>
+-
+-    <servlet>
+-        <servlet-name>DispatcherServlet</servlet-name>
+-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+-        <init-param>
+-            <param-name>contextConfigLocation</param-name>
+-            <param-value>
+-                /WEB-INF/spring/webcontext/DispatcherServlet-context.xml
+-            </param-value>
+-        </init-param>
+-    </servlet>
+-
+-    <servlet-mapping>
+-        <servlet-name>DispatcherServlet</servlet-name>
+-        <url-pattern>/</url-pattern>
+-    </servlet-mapping>
+-
+-    <jsp-config>
+-        <jsp-property-group>
+-            <url-pattern>*.jsp</url-pattern>
+-            <page-encoding>UTF-8</page-encoding>
+-        </jsp-property-group>
+-    </jsp-config>
+-
+-</web-app>
+\ No newline at end of file
+Index: target/webstore/WEB-INF/views/welcome.jsp
+===================================================================
+diff --git a/target/webstore/WEB-INF/views/welcome.jsp b/target/webstore/WEB-INF/views/welcome.jsp
+deleted file mode 100644
+--- a/target/webstore/WEB-INF/views/welcome.jsp	(revision ee38bf80455d7ee03134b27cd6fe3a63166cda50)
++++ /dev/null	(revision ee38bf80455d7ee03134b27cd6fe3a63166cda50)
+@@ -1,54 +0,0 @@
+-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+-<%@ page import="java.lang.System" %>
+-<%@ page import="java.time.LocalDateTime" %>
+-<%@ page import="java.time.format.DateTimeFormatter" %>
+-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+-<html>
+-<head>
+-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+-    <title>Welcome to webstore</title>
+-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+-    <script>
+-        function timeRenew() {
+-            let time = new Date();
+-            $('.ui-icon-clock').html(time);
+-        }
+-
+-        $(document).ready(function () {
+-            setInterval(timeRenew, 1000)
+-        });
+-    </script>
+-</head>
+-<body>
+-<section>
+-    <div class="media">
+-        <div class="container">
+-            <div class="row">
+-                <div class="col-sm-4">
+-                    <img src="<c:url value="/resource/images/welcome_1.png"></c:url>" class="mr-3" alt="image"
+-                         style="width: 100%">
+-                </div>
+-                <div class="col-sm-4">
+-                    <img src="<c:url value="/resource/images/welcome_2.png"></c:url>" class="mr-3" alt="image"
+-                         style="width: 100%">
+-                </div>
+-                <div class="col-sm-4">
+-                    <img src="<c:url value="/resource/images/welcome_3.png"></c:url>" class="mr-3" alt="image"
+-                         style="width: 100%">
+-                </div>
+-            </div>
+-            <div class="media-body">
+-                <h5 class="mt-0">The only way to buy something is to sell something</h5>
+-                Folk wisdom.
+-            </div>
+-            <p class="lead">
+-                <a class="ui-icon-clock"> </a>
+-            </p>
+-            <p class="lead">
+-        </div>
+-    </div>
+-</section>
+-</body>
+-</html>
+-
+Index: target/webstore/WEB-INF/spring/webcontext/DispatcherServlet-context.xml
+===================================================================
+diff --git a/target/webstore/WEB-INF/spring/webcontext/DispatcherServlet-context.xml b/target/webstore/WEB-INF/spring/webcontext/DispatcherServlet-context.xml
+deleted file mode 100644
+--- a/target/webstore/WEB-INF/spring/webcontext/DispatcherServlet-context.xml	(revision ee38bf80455d7ee03134b27cd6fe3a63166cda50)
++++ /dev/null	(revision ee38bf80455d7ee03134b27cd6fe3a63166cda50)
+@@ -1,143 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<beans
+-        xmlns="http://www.springframework.org/schema/beans"
+-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-        xmlns:context="http://www.springframework.org/schema/context"
+-        xmlns:mvc="http://www.springframework.org/schema/mvc"
+-        xmlns:webflow-config="http://www.springframework.org/schema/webflow-config"
+-        xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+-        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+-		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+-		http://www.springframework.org/schema/webflow-config
+-		http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.3.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+-    <mvc:interceptors>
+-        <bean class="webstore.interceptor.PerfomanceMonitorInterceptor"/>
+-        <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+-            <property name="paramName" value="language"/>
+-        </bean>
+-        <bean class="webstore.interceptor.AuditingInterceptor"/>
+-        <bean class="webstore.interceptor.PromoCodeInterceptor">
+-            <property name="promoCode" value="OFF3R"/>
+-            <property name="errorRedirect" value="invalidPromoCode"/>
+-            <property name="offerRedirect" value="products"/>
+-        </bean>
+-    </mvc:interceptors>
+-    <mvc:resources location="/resources/"
+-                   mapping="/resource/**"/>
+-    <mvc:annotation-driven enable-matrix-variables="true" validator="validator"/>
+-    <context:component-scan base-package="webstore"/>
+-
+-    <webflow-config:flow-executor id="flowExecutor"	flow-registry="flowRegistry" />
+-
+-    <webflow-config:flow-registry id="flowRegistry"	base-path="/WEB-INF/flows">
+-        <webflow-config:flow-location path="/checkout/checkout-flow.xml" id="checkout"/>
+-    </webflow-config:flow-registry>
+-
+-    <bean id="flowHandlerMapping" class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping">
+-        <property name="flowRegistry" ref="flowRegistry" />
+-    </bean>
+-
+-    <bean id="flowHandlerAdapter" class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
+-        <property name="flowExecutor" ref="flowExecutor" />
+-    </bean>
+-
+-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+-        <property name="prefix" value="/WEB-INF/views/"/>
+-        <property name="suffix" value=".jsp"/>
+-    </bean>
+-
+-    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+-        <property name="basename" value="messages"/>
+-        <property name="defaultEncoding" value="UTF-8"/>
+-    </bean>
+-
+-    <bean id="propertySource" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+-        <property name="location" value="/application.properties"/>
+-    </bean>
+-    <bean id="multipartResolver"
+-          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+-        <property name="maxUploadSize" value="102400000"/>
+-    </bean>
+-
+-    <bean id="clock"
+-          class="webstore.misc.Clock">
+-        <property name="daemon" value="true"/>
+-    </bean>
+-
+-    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+-        <property name="defaultViews">
+-            <list>
+-                <ref bean="jsonView"/>
+-                <ref bean="xmlView"/>
+-            </list>
+-        </property>
+-    </bean>
+-
+-    <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+-        <property name="prettyPrint" value="true"/>
+-    </bean>
+-    <bean id="xmlView" class="org.springframework.web.servlet.view.xml.MarshallingView">
+-        <constructor-arg>
+-            <bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+-                <property name="classesToBeBound">
+-                    <list>
+-                        <value>webstore.domain.Product</value>
+-                    </list>
+-                </property>
+-            </bean>
+-        </constructor-arg>
+-    </bean>
+-    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+-        <property name="defaultLocale" value="en"/>
+-    </bean>
+-
+-    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+-        <property name="validationMessageSource" ref="messageSource"/>
+-    </bean>
+-
+-    <bean id="productValidator"
+-          class="webstore.validator.ProductValidator">
+-        <property name="springValidators">
+-            <set>
+-                <ref bean="unitsInStockValidator"/>
+-            </set>
+-        </property>
+-    </bean>
+-
+-    <bean id="unitsInStockValidator"
+-          class="webstore.validator.UnitsInStockValidator"/>
+-    <bean id="productImageValidator" class="webstore.validator.ProductImageValidator">
+-        <property name="allowedSize" value="10240000"/>
+-    </bean>
+-
+-    <bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+-        <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
+-        <property name="order" value="-2" />
+-    </bean>
+-
+-    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+-        <property name="definitions">
+-            <list>
+-                <value>/WEB-INF/tiles/definitions/tile-definition.xml</value>
+-            </list>
+-        </property>
+-    </bean>
+-
+-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+-        <property name="driverClassName" value="org.postgresql.Driver"/>
+-        <property name="url" value="jdbc:postgresql://localhost:5432/webstore"/>
+-        <property name="username" value="webstore"/>
+-        <property name="password" value="strong"/>
+-    </bean>
+-
+-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+-        <property name="dataSource" ref="dataSource"/>
+-    </bean>
+-
+-    <jdbc:initialize-database>
+-        <jdbc:script location="classpath:schema.sql"/>
+-        <jdbc:script location="classpath:data.sql"/>
+-    </jdbc:initialize-database>
+-
+-</beans>
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+new file mode 100644
+--- /dev/null	(date 1680844501718)
++++ b/README.md	(date 1680844501718)
+@@ -0,0 +1,6 @@
++# webstore
++Webstore (Spring MVC)
++ Legacy Spring 4.0.3 E-commerce project (xml-based configuration). 
++ PoC of electronic e-store.
++ Frontend is based on JSP, AJAX, Apache Tiles and WebFlow, backend is based on Spring MVC in form of REST API. 
++ Postgres is used as RDMBS. Project hosts in public cloud (Ubuntu, Apache Tomcat and Postgres).
+diff --git a/src/main/resources/application.properties b/src/main/webapp/WEB-INF/images/application.properties
+rename from src/main/resources/application.properties
+rename to src/main/webapp/WEB-INF/images/application.properties
+diff --git a/src/main/resources/schema.sql b/src/main/webapp/WEB-INF/images/schema.sql
+rename from src/main/resources/schema.sql
+rename to src/main/webapp/WEB-INF/images/schema.sql
+diff --git a/src/main/resources/data.sql b/src/main/webapp/WEB-INF/images/data.sql
+rename from src/main/resources/data.sql
+rename to src/main/webapp/WEB-INF/images/data.sql
+diff --git a/src/main/resources/messages_ru.properties b/src/main/webapp/WEB-INF/images/messages_ru.properties
+rename from src/main/resources/messages_ru.properties
+rename to src/main/webapp/WEB-INF/images/messages_ru.properties
+diff --git a/src/main/resources/js/controllers.js b/src/main/webapp/WEB-INF/images/js/controllers.js
+rename from src/main/resources/js/controllers.js
+rename to src/main/webapp/WEB-INF/images/js/controllers.js
+diff --git a/src/main/resources/messages.properties b/src/main/webapp/WEB-INF/images/messages.properties
+rename from src/main/resources/messages.properties
+rename to src/main/webapp/WEB-INF/images/messages.properties
+diff --git a/src/main/resources/log4j.properties b/src/main/webapp/WEB-INF/images/log4j.properties
+rename from src/main/resources/log4j.properties
+rename to src/main/webapp/WEB-INF/images/log4j.properties
+diff --git a/src/main/resources/messages_nl.properties b/src/main/webapp/WEB-INF/images/messages_nl.properties
+rename from src/main/resources/messages_nl.properties
+rename to src/main/webapp/WEB-INF/images/messages_nl.properties

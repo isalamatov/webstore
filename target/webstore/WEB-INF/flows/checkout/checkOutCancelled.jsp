@@ -11,8 +11,8 @@
 	<section>
 		<div class="jumbotron">
 			<div class="container">
-				<h1 class="alert alert-danger">check out cancelled</h1>
-				<p>Your Check out process cancelled! you may continue shopping..</p>
+				<h1 class="alert alert-danger">Check out cancelled</h1>
+				<p>Check out process cancelled! You may continue shopping.</p>
 			</div>
 		</div>
 	</section>

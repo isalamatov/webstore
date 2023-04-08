@@ -44,7 +44,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Long saveOrder(Order order) {
         Long orderId = orderRepository.saveOrder(order);
-        cartService.delete(order.getCart().getCartId());
+        order.setOrderId(orderId);
         return orderId;
     }
 }

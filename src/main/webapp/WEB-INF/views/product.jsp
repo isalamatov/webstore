@@ -50,13 +50,11 @@
             <p>
             <p ng-controller="cartCtrl">
                 <a href="" class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')">
-                    <span class="glyphicon-shopping-cart glyphicon"> </span> Order Now </a>
+                    <span class="glyphicon-shopping-cart glyphicon"> </span> Add to cart </a>
                 <a href="<spring:url value="/cart" />" class="btn btn-default">
-                    <span class="glyphicon-hand-right glyphicon"></span> View Cart
-                </a>
+                    <span class="glyphicon-hand-right glyphicon"></span> View Cart </a>
                 <a href="<spring:url value="/products" />" class="btn btndefault">
-                    <span class="glyphicon-hand-left glyphicon"></span> back
-                </a>
+                    <span class="glyphicon-hand-left glyphicon"></span> back </a>
             </p>
         </div>
     </div>

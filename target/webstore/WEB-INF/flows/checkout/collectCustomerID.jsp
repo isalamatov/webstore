@@ -19,9 +19,15 @@
 		</div>
 	</section>
 	<section class="container">
+		<c:forEach items="${flowRequestContext.messageContext.allMessages}" var="message">
+			<div class="alert alert-danger">
+				<spring:message text="${message.text}"/>
+				<br/>
+			</div>
+		</c:forEach>
 		<form:form modelAttribute="order.customer" class="form-horizontal">
 			<fieldset>
-				<legend>Customer ID</legend>
+				<legend>Customer email address</legend>
 
 				<div class="form-group">
 					<label class="control-label col-lg-2 col-lg-2" for="customerId" />Customer Id</label>

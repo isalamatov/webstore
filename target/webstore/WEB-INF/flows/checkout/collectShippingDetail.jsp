@@ -20,11 +20,10 @@
 	</section>
 	<section class="container">
 		<c:forEach items="${flowRequestContext.messageContext.allMessages}" var="message">
-		<li>
-			Message Source is ${message.source}
-			<br>
-			Message Text is ${message.text}
-		</li>
+			<div class="alert alert-danger">
+				<spring:message text="${message.text}"/>
+				<br/>
+			</div>
 		</c:forEach>
 		<form:form modelAttribute="order.shippingDetail" class="form-horizontal">
 			<fieldset>

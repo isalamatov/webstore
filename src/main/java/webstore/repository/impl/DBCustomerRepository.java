@@ -57,16 +57,13 @@ public class DBCustomerRepository implements CustomerRepository {
     @Override
     public Customer getCustomer(String customerId) {
         String sqlQueryGetById = "SELECT * FROM customers WHERE customer_id = ?";
-        return jdbcTemplate.queryForObject(sqlQueryGetById, (rs, rn) -> makeCustomer(rs), Customer.class);
+        return jdbcTemplate.queryForObject(sqlQueryGetById, (rs, rn) -> makeCustomer(rs), customerId);
     }
 
     @Override
     public Boolean isCustomerExist(String customerId) {
-        String sqlQuery = "SELECT CASE WHEN COUNT(1) > 0 THEN TRUE ELSE FALSE END AS result FROM customers WHERE customer_id = ?";
-        String result = jdbcTemplate.query(sqlQuery,
-                (rs, rn) -> rs.getString("result"),
-                customerId).get(0);
-        return Boolean.parseBoolean(result);
+        String sql = "SELECT 1 FROM customers WHERE customer_id = ? LIMIT 1";
+        return Boolean.TRUE.equals(jdbcTemplate.query(sql, ResultSet::next, customerId));
     }
 
     private Customer makeCustomer(ResultSet rs) throws SQLException {
@@ -75,7 +72,25 @@ public class DBCustomerRepository implements CustomerRepository {
         String phoneNumber = rs.getString("phone_number");
         int billingAddressId = rs.getInt("billing_address_id");
         String sqlQueryAddress = "SELECT * FROM addresses WHERE adress_id = ?";
-        Address billingAddress = jdbcTemplate.queryForObject(sqlQueryAddress, Address.class, billingAddressId);
+        Address billingAddress = jdbcTemplate.queryForObject(sqlQueryAddress, (rs2, rn) -> makeAddress(rs2), billingAddressId);
         return new Customer(customerId, name, billingAddress, phoneNumber);
+    }
+
+    private Address makeAddress(ResultSet rs) throws SQLException {
+        String adressId = rs.getString("adress_id");
+        String doorNo = rs.getString("door_no");
+        String streetName = rs.getString("street_name");
+        String areaName = rs.getString("area_name");
+        String state = rs.getString("state");
+        String country = rs.getString("country");
+        String zipCode = rs.getString("zip_code");
+        Address address = new Address();
+        address.setDoorNo(doorNo);
+        address.setStreetName(streetName);
+        address.setAreaName(areaName);
+        address.setState(state);
+        address.setCountry(country);
+        address.setZipCode(zipCode);
+        return address;
     }
 }

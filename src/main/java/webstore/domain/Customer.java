@@ -1,5 +1,6 @@
 package webstore.domain;
 
+import org.hibernate.validator.constraints.Email;
 import org.springframework.binding.message.MessageBuilder;
 import org.springframework.binding.message.MessageContext;
 import org.springframework.binding.validation.ValidationContext;
@@ -11,6 +12,8 @@ import java.io.Serializable;
 @Validated
 public class Customer implements Serializable {
     private static final long serialVersionUID = 2284040482222162898L;
+
+    @Email
     private String customerId;
     @NotNull
     private String name;

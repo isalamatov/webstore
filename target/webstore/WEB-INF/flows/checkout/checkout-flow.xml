@@ -43,17 +43,21 @@ http://www.springframework.org/schema/webflow/spring-webflow.xsd">
         <transition on="shippingDetailCollected"
                     to="orderConfirmation"/>
         <transition on="backToCollectCustomerInfo"
-                    to="collectCustomerInfo"/>
+                    to="collectCustomerInfo" validate="false"/>
     </view-state>
 
     <view-state id="orderConfirmation">
         <transition on="orderConfirmed" to="processOrder"/>
         <transition on="backToCollectShippingDetail"
-                    to="collectShippingDetail"/>
+                    to="collectShippingDetail" validate="false"/>
     </view-state>
 
     <action-state id="processOrder">
-        <evaluate expression="orderServiceImpl.proccessOrder(order)"/>
+        <evaluate expression="orderServiceImpl.processOrder(order)"/>
+        <transition to="saveOrder"/>
+    </action-state>
+
+    <action-state id="saveOrder">
         <evaluate expression="orderServiceImpl.saveOrder(order)"
                   result="order.orderId"/>
         <transition to="thankCustomer"/>
@@ -76,7 +80,7 @@ http://www.springframework.org/schema/webflow/spring-webflow.xsd">
     <end-state id="cancelCheckout" view="checkOutCancelled.jsp"/>
 
     <global-transitions>
-        <transition on="cancel" to="endState"/>
+        <transition on="cancel" to="cancelCheckout" validate="false"/>
     </global-transitions>
 
 </flow>

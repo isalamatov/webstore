@@ -9,47 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e607e690-ca46-492a-8687-d656e17ed7aa" name="Changes" comment="refactor:master commit">
+    <list default="true" id="e607e690-ca46-492a-8687-d656e17ed7aa" name="Changes" comment="refactor:bug fix. Order flow validation added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webstore/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webstore/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webstore/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webstore/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webstore/repository/impl/DBCustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webstore/repository/impl/DBCustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webstore/interceptor/AuditingInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webstore/interceptor/AuditingInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/webstore/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webstore/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log/webstore-audit.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/webstore-audit.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/webstore-performance.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/webstore-performance.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log/webstore-performance.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/webstore-performance.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/checkOutCancelled.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/checkOutCancelled.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/checkout-flow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/checkout-flow.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/collectCustomerID.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/collectCustomerID.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/collectCustomerInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/collectCustomerInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/collectShippingDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/collectShippingDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/webcontext/DispatcherServlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/webcontext/DispatcherServlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles/definitions/tile-definition.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles/definitions/tile-definition.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log/webstore-audit.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/webstore-audit.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log/webstore-performance.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/webstore-performance.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log/webstore-performance.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/webstore-performance.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webstore/domain/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webstore/domain/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webstore/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webstore/domain/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webstore/repository/impl/DBCustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webstore/repository/impl/DBCustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webstore/interceptor/AuditingInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webstore/interceptor/AuditingInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webstore/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webstore/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webstore.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/log/webstore-audit.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/log/webstore-audit.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/log/webstore-performance.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/log/webstore-performance.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/log/webstore-performance.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/log/webstore-performance.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/domain/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/domain/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/domain/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/repository/impl/DBCustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/repository/impl/DBCustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/interceptor/AuditingInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/interceptor/AuditingInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/classes/webstore/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/checkOutCancelled.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/checkOutCancelled.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/checkout-flow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/checkout-flow.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/collectCustomerID.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/collectCustomerID.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/collectCustomerInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/collectCustomerInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/collectShippingDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/flows/checkout/collectShippingDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/spring/webcontext/DispatcherServlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/spring/webcontext/DispatcherServlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webstore/WEB-INF/tiles/definitions/tile-definition.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/webstore/WEB-INF/tiles/definitions/tile-definition.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -526,7 +503,7 @@
       <workItem from="1680173913284" duration="4661000" />
       <workItem from="1680435026248" duration="24622000" />
       <workItem from="1680610864274" duration="1696000" />
-      <workItem from="1680612943671" duration="28025000" />
+      <workItem from="1680612943671" duration="34332000" />
     </task>
     <task id="LOCAL-00001" summary="Added security, cart, webflow">
       <created>1667204060794</created>
@@ -598,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680844474895</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor:bug fix. Order flow validation added.">
+      <created>1680952286851</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680952286851</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +619,8 @@
     <MESSAGE value="refactor:Added database repository, PostrgreSQL." />
     <MESSAGE value="refactor:progress commit" />
     <MESSAGE value="refactor:master commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor:master commit" />
+    <MESSAGE value="refactor:bug fix. Order flow validation added." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor:bug fix. Order flow validation added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -651,9 +636,9 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/webstore/service/impl/OrderServiceImpl.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/src/main/java/webstore/interceptor/AuditingInterceptor.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -45,6 +45,7 @@ public class OrderServiceImpl implements OrderService {
     public Long saveOrder(Order order) {
         Long orderId = orderRepository.saveOrder(order);
         order.setOrderId(orderId);
+        cartService.delete(order.getCart().getCartId());
         return orderId;
     }
 }
